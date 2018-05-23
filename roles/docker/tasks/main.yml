@@ -1,0 +1,19 @@
+
+
+- name: ensure docker registry is available
+  become: true
+  apt_repository: repo='{{ apt_repo }}' state=present
+
+- name: ensure docker and dependencies are installed
+  become: true
+  apt: name=docker-engine update_cache=yes force=yes
+  
+
+- name: Ensure Docker is started and enabled at boot.
+  become: true
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
+
