@@ -17,6 +17,7 @@
 sudo easy_install pip
 
 sudo pip install ansible
+
 ```
 
 
@@ -32,3 +33,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 https://github.com/creationix/nvm#install-script
 
+### install java 
+
+ansible-playbook java8.yml -i inventory --extra-vars "host=dropbox" 

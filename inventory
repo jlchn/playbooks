@@ -3,6 +3,11 @@
 
 localhost
 
+
+[dropbox]
+
+192.168.0.100 ansible_user=jiangli ansible_ssh_pass=123456
+
 [aws]
 
 52.***.***.25 ansible_user=ubuntu ansible_ssh_private_key_file=~/Documents/*****.pem

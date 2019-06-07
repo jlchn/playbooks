@@ -1,5 +1,5 @@
 ---
 
-- hosts: aws
+- hosts: '{{ host }}'
   roles:
   - java8
