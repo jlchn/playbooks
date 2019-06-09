@@ -36,3 +36,7 @@ https://github.com/creationix/nvm#install-script
 ### install java 
 
 ansible-playbook java8.yml -i inventory --extra-vars "host=dropbox" 
+
+### Start Kafka cluster
+
+docker-compose -f kafka.yml up
